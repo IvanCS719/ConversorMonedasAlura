@@ -17,8 +17,7 @@ public class Conexion {
             return response.body();
 
         } catch (IOException | InterruptedException e) {
-            System.out.println("Error al procesar el API: " + e.getMessage());
+            throw new RuntimeException("Error al procesar el API: " + e.getMessage());
         }
-        return "{API sin datos}";
     }
 }
