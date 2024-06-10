@@ -2,9 +2,11 @@ package com.ivandroid.conversormonedasalura;
 
 import com.ivandroid.conversormonedasalura.API.Conexion;
 import com.ivandroid.conversormonedasalura.API.TransformarRespuesta;
+import com.ivandroid.conversormonedasalura.modelos.HistorialConversion;
 import com.ivandroid.conversormonedasalura.modelos.TipoDeCambio;
 import com.ivandroid.conversormonedasalura.records.TipoDeCambioAPI;
-
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -30,6 +32,7 @@ public class Main {
 
         int opcion = 0;
         double valor;
+        String mensaje;
 
         while (opcion != 7) {
             try {
@@ -56,52 +59,62 @@ public class Main {
                     case 1:
                         System.out.println("Ingrese el valor para convertir Dólar =>> Peso Mexicano:");
                         valor = teclado.nextDouble();
+                        mensaje = tipoDeCambio.baseCodeToRate(valor, "USD", "MXN");
+                        System.out.println(mensaje);
+                        HistorialConversion.generarHistorial(mensaje);
 
-                        tipoDeCambio.baseCodeToRate(valor, "USD", "MXN");
                         break;
 
                     case 2:
                         System.out.println("Ingrese el valor para convertir Peso Mexicano =>> Dólar:");
                         valor = teclado.nextDouble();
-
-                        tipoDeCambio.RateToBaseCode(valor, "MXN", "USD");
+                        mensaje = tipoDeCambio.RateToBaseCode(valor, "MXN", "USD");
+                        System.out.println(mensaje);
+                        HistorialConversion.generarHistorial(mensaje);
                         break;
 
                     case 3:
                         System.out.println("Ingrese el valor para convertir Dólar =>> Peso Argentino:");
                         valor = teclado.nextDouble();
-
-                        tipoDeCambio.baseCodeToRate(valor, "USD", "ARS");
+                        mensaje = tipoDeCambio.baseCodeToRate(valor, "USD", "ARS");
+                        System.out.println(mensaje);
+                        HistorialConversion.generarHistorial(mensaje);
                         break;
 
                     case 4:
                         System.out.println("Ingrese el valor para convertir Peso Argentino =>> Dólar:");
                         valor = teclado.nextDouble();
-
-                        tipoDeCambio.RateToBaseCode(valor, "ARS", "USD");
+                        mensaje = tipoDeCambio.RateToBaseCode(valor, "ARS", "USD");
+                        System.out.println(mensaje);
+                        HistorialConversion.generarHistorial(mensaje);
                         break;
 
                     case 5:
                         System.out.println("Ingrese el valor para convertir Dólar =>> Real Brasileño:");
                         valor = teclado.nextDouble();
-
-                        tipoDeCambio.baseCodeToRate(valor, "USD", "BRL");
+                        mensaje = tipoDeCambio.baseCodeToRate(valor, "USD", "BRL");
+                        System.out.println(mensaje);
+                        HistorialConversion.generarHistorial(mensaje);
                         break;
 
                     case 6:
                         System.out.println("Ingrese el valor para convertir Real Brasileño =>> Dólar:");
                         valor = teclado.nextDouble();
-
-                        tipoDeCambio.RateToBaseCode(valor, "BRL", "USD");
+                        mensaje = tipoDeCambio.RateToBaseCode(valor, "BRL", "USD");
+                        System.out.println(mensaje);
+                        HistorialConversion.generarHistorial(mensaje);
                         break;
 
                     case 7:
-                        System.out.println("Gracias por usar este Convertidor de Monedas");
+                        System.out.println("Su actividad fue registrada en HistorialConversion.txt\n" +
+                                "Gracias por usar este Convertidor de Monedas");
                         break;
                 }
+
             } catch (InputMismatchException e) {
                 System.out.println("Entrada no válida. Por favor, ingrese un número.");
-                teclado.next(); // Limpiar la entrada incorrecta
+                //Limpiar la entrada incorrecta
+                teclado.next();
             } catch (Exception e) {
                 System.out.println("Error inesperado: " + e.getMessage());
             }

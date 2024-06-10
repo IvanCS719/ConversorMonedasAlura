@@ -1,0 +1,6 @@
+2024-06-10 01:05:54 - El valor 300.0 [USD] corresponde al valor final de =>>> 5493.944100000001 [MXN]
+2024-06-10 01:05:58 - El valor 250.0 [USD] corresponde al valor final de =>>> 4578.28675 [MXN]
+2024-06-10 01:06:03 - El valor 45.0 [USD] corresponde al valor final de =>>> 824.091615 [MXN]
+2024-06-10 01:17:53 - El valor 5000.00 [ARS] corresponde al valor final de =>>> 5.78 [USD]
+2024-06-10 01:18:02 - El valor 2000.00 [MXN] corresponde al valor final de =>>> 109.21 [USD]
+2024-06-10 01:18:14 - El valor 60.00 [BRL] corresponde al valor final de =>>> 11.41 [USD]

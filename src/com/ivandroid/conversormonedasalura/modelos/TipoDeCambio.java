@@ -17,16 +17,16 @@ public class TipoDeCambio {
         }
     }
 
-    public void baseCodeToRate(Double baseCode, String countryBase, String countryCovertir){
-        var monedaConvertida = baseCode * conversion.get(countryCovertir);
-        System.out.println("El valor "+baseCode+" ["+countryBase+"] corresponde"
-        +" al valor final de =>>> "+monedaConvertida+" ["+countryCovertir+"]");
+    public String baseCodeToRate(Double baseCode, String countryBase, String countryConvertir){
+        var monedaConvertida = baseCode * conversion.get(countryConvertir);
+        return String.format("El valor %.2f [%s] corresponde al valor final de =>>> %.2f [%s]",
+                baseCode, countryBase, monedaConvertida, countryConvertir);
     }
 
-    public void RateToBaseCode(Double rate, String countryBase, String countryCovertir){
-        var igualar = conversion.get(countryCovertir) / conversion.get(countryBase);
+    public String RateToBaseCode(Double rate, String countryBase, String countryConvertir){
+        var igualar = conversion.get(countryConvertir) / conversion.get(countryBase);
         var monedaConvertida = rate * igualar;
-        System.out.println("El valor "+rate+" ["+countryBase+"] corresponde"
-                +" al valor final de =>>> "+monedaConvertida+" ["+countryCovertir+"]");
+        return String.format("El valor %.2f [%s] corresponde al valor final de =>>> %.2f [%s]",
+                rate, countryBase, monedaConvertida, countryConvertir);
     }
 }
