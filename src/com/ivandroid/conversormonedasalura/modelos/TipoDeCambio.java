@@ -19,7 +19,7 @@ public class TipoDeCambio {
         +" al valor final de =>>> "+monedaConvertida+" ["+countryCovertir+"]");
     }
 
-    public void RateTobaseCode(Double rate, String countryBase, String countryCovertir){
+    public void RateToBaseCode(Double rate, String countryBase, String countryCovertir){
         var igualar = conversion.get(countryCovertir) / conversion.get(countryBase);
         var monedaConvertida = rate * igualar;
         System.out.println("El valor "+rate+" ["+countryBase+"] corresponde"
