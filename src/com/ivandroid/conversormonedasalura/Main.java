@@ -5,8 +5,6 @@ import com.ivandroid.conversormonedasalura.API.TransformarRespuesta;
 import com.ivandroid.conversormonedasalura.modelos.HistorialConversion;
 import com.ivandroid.conversormonedasalura.modelos.TipoDeCambio;
 import com.ivandroid.conversormonedasalura.records.TipoDeCambioAPI;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 

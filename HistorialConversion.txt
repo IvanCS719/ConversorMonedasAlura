@@ -4,3 +4,7 @@
 2024-06-10 01:17:53 - El valor 5000.00 [ARS] corresponde al valor final de =>>> 5.78 [USD]
 2024-06-10 01:18:02 - El valor 2000.00 [MXN] corresponde al valor final de =>>> 109.21 [USD]
 2024-06-10 01:18:14 - El valor 60.00 [BRL] corresponde al valor final de =>>> 11.41 [USD]
+2024-06-10 13:22:51 - El valor 10.00 [USD] corresponde al valor final de =>>> 183.13 [MXN]
+2024-06-10 13:23:03 - El valor 8000.00 [ARS] corresponde al valor final de =>>> 9.25 [USD]
+2024-06-10 13:23:16 - El valor 50.00 [USD] corresponde al valor final de =>>> 262.81 [BRL]
+2024-06-10 13:23:29 - El valor 8000.00 [MXN] corresponde al valor final de =>>> 436.84 [USD]
