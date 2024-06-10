@@ -6,7 +6,7 @@
 ![Banner que muestra billtes de diferente países](https://github.com/IvanCS719/ConversorMonedasAlura/assets/78459619/cae9c9d2-e94b-4c7f-a6b5-f4122c14ed86)
 
 ## Descripción
-Desafio de conversor de monedas propuesto por Alura, para aprender a realizar solicitudes a una API de tasas de cambio, a manipular datos JSON y, finalmente, a filtrar y mostrar las monedas de interés.
+Desafio de conversor de monedas propuesto por Alura como parte del aprendizaje del Grupo 6 de Oracle Next Education, para aprender a realizar solicitudes a una API de tasas de cambio, a manipular datos JSON y, finalmente, a filtrar y mostrar las monedas de interés.
 
 ## :hammer: Funcionalidades del proyecto
 
