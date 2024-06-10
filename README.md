@@ -1,4 +1,4 @@
-<h1 align="center">Challenge Conversor de Monedas Alura</h1>
+<h1 align="center">Challenge Conversor de Monedas Alura 6</h1>
 
 ![Static Badge](https://img.shields.io/badge/estatus-finalizado-blue) ![Static Badge](https://img.shields.io/badge/%C3%BAltima_versi%C3%B3n-Junio-%23028816)
 
